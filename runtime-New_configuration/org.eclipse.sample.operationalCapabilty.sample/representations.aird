@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:operationalCapability="http://www.example.org/operationalCapability" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:operationalCapability="http://www.example.org/operationalCapability" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_0Sj5gKpKEe-tlbSL-kTrnA" selectedViews="_utH5wKr0Ee-bx7u-bONnVw" version="15.4.1.202403191723">
     <semanticResources>Main.operationalcapability</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_utH5wKr0Ee-bx7u-bONnVw">
@@ -8,7 +8,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']"/>
         <target xmi:type="operationalCapability:CapabilityDiagram" href="Myain.operationalcapability#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_MvVwMar1Ee-bx7u-bONnVw" name="Main Capability Diagram" repPath="#_MvVJIKr1Ee-bx7u-bONnVw" changeId="1732515557048">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_pjZTgKt7Ee-Y6c0MqtFCeA" name="Main Capability Diagram" repPath="#_pjYscKt7Ee-Y6c0MqtFCeA" changeId="1732574058235">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']"/>
         <target xmi:type="operationalCapability:CapabilityDiagram" href="Main.operationalcapability#/"/>
       </ownedRepresentationDescriptors>
@@ -28,17 +28,36 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer"/>
     <target xmi:type="operationalCapability:CapabilityDiagram" href="Myain.operationalcapability#/"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram uid="_MvVJIKr1Ee-bx7u-bONnVw">
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_MvW-UKr1Ee-bx7u-bONnVw" source="GMF_DIAGRAMS">
-      <data xmi:type="notation:Diagram" xmi:id="_MvW-Uar1Ee-bx7u-bONnVw" type="Sirius" element="_MvVJIKr1Ee-bx7u-bONnVw" measurementUnit="Pixel">
-        <styles xmi:type="notation:DiagramStyle" xmi:id="_MvW-Uqr1Ee-bx7u-bONnVw"/>
+  <diagram:DSemanticDiagram uid="_pjYscKt7Ee-Y6c0MqtFCeA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_pjeMAKt7Ee-Y6c0MqtFCeA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_pjeMAat7Ee-Y6c0MqtFCeA" type="Sirius" element="_pjYscKt7Ee-Y6c0MqtFCeA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_pjfaIKt7Ee-Y6c0MqtFCeA" type="2001" element="_pjeMA6t7Ee-Y6c0MqtFCeA">
+          <children xmi:type="notation:Node" xmi:id="_pjfaI6t7Ee-Y6c0MqtFCeA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_pjfaJKt7Ee-Y6c0MqtFCeA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pjfaJat7Ee-Y6c0MqtFCeA" type="3016" element="_pjezEKt7Ee-Y6c0MqtFCeA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_pjfaJqt7Ee-Y6c0MqtFCeA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pjfaJ6t7Ee-Y6c0MqtFCeA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_pjfaIat7Ee-Y6c0MqtFCeA" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pjfaIqt7Ee-Y6c0MqtFCeA" x="276" y="240" width="230" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_pjeMAqt7Ee-Y6c0MqtFCeA"/>
       </data>
     </ownedAnnotationEntries>
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_MvXlYKr1Ee-bx7u-bONnVw" source="DANNOTATION_CUSTOMIZATION_KEY">
-      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_MvXlYar1Ee-bx7u-bONnVw"/>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_pjezEqt7Ee-Y6c0MqtFCeA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_pjezE6t7Ee-Y6c0MqtFCeA"/>
     </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_pjeMA6t7Ee-Y6c0MqtFCeA" name="asdasdasdasdasdasd" width="23" height="5" resizeKind="NSEW">
+      <target xmi:type="operationalCapability:Capabilty" href="Main.operationalcapability#//@elements.0"/>
+      <semanticElements xmi:type="operationalCapability:Capabilty" href="Main.operationalcapability#//@elements.0"/>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_pjezEKt7Ee-Y6c0MqtFCeA" labelSize="12" labelPosition="node" horizontalDiameter="23" verticalDiameter="5" color="238,201,142">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Capability']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Capability']"/>
+    </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']"/>
-    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_MvVwMKr1Ee-bx7u-bONnVw"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_pjYscat7Ee-Y6c0MqtFCeA"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer"/>
     <target xmi:type="operationalCapability:CapabilityDiagram" href="Main.operationalcapability#/"/>
   </diagram:DSemanticDiagram>
