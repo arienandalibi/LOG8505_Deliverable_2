@@ -24,6 +24,7 @@ import org.eclipse.sample.operationalCapability.SpecializableElement;
  * <ul>
  *   <li>{@link org.eclipse.sample.operationalCapability.impl.SpecializableElementImpl#getSpecializes <em>Specializes</em>}</li>
  *   <li>{@link org.eclipse.sample.operationalCapability.impl.SpecializableElementImpl#getIsSpecializedBy <em>Is Specialized By</em>}</li>
+ *   <li>{@link org.eclipse.sample.operationalCapability.impl.SpecializableElementImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -48,6 +49,26 @@ public abstract class SpecializableElementImpl extends MinimalEObjectImpl.Contai
 	 * @ordered
 	 */
 	protected SpecializableElement isSpecializedBy;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -217,6 +238,28 @@ public abstract class SpecializableElementImpl extends MinimalEObjectImpl.Contai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					OperationalCapabilityPackage.SPECIALIZABLE_ELEMENT__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -268,6 +311,8 @@ public abstract class SpecializableElementImpl extends MinimalEObjectImpl.Contai
 			if (resolve)
 				return getIsSpecializedBy();
 			return basicGetIsSpecializedBy();
+		case OperationalCapabilityPackage.SPECIALIZABLE_ELEMENT__NAME:
+			return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -285,6 +330,9 @@ public abstract class SpecializableElementImpl extends MinimalEObjectImpl.Contai
 			return;
 		case OperationalCapabilityPackage.SPECIALIZABLE_ELEMENT__IS_SPECIALIZED_BY:
 			setIsSpecializedBy((SpecializableElement) newValue);
+			return;
+		case OperationalCapabilityPackage.SPECIALIZABLE_ELEMENT__NAME:
+			setName((String) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -304,6 +352,9 @@ public abstract class SpecializableElementImpl extends MinimalEObjectImpl.Contai
 		case OperationalCapabilityPackage.SPECIALIZABLE_ELEMENT__IS_SPECIALIZED_BY:
 			setIsSpecializedBy((SpecializableElement) null);
 			return;
+		case OperationalCapabilityPackage.SPECIALIZABLE_ELEMENT__NAME:
+			setName(NAME_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -320,8 +371,27 @@ public abstract class SpecializableElementImpl extends MinimalEObjectImpl.Contai
 			return specializes != null;
 		case OperationalCapabilityPackage.SPECIALIZABLE_ELEMENT__IS_SPECIALIZED_BY:
 			return isSpecializedBy != null;
+		case OperationalCapabilityPackage.SPECIALIZABLE_ELEMENT__NAME:
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(')');
+		return result.toString();
 	}
 
 } //SpecializableElementImpl

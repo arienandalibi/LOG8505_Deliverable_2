@@ -191,15 +191,6 @@ public class OperationalCapabilityPackageImpl extends EPackageImpl implements Op
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapabilty_Name() {
-		return (EAttribute) capabiltyEClass.getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getSpecializableElement() {
 		return specializableElementEClass;
 	}
@@ -220,6 +211,15 @@ public class OperationalCapabilityPackageImpl extends EPackageImpl implements Op
 	 */
 	public EReference getSpecializableElement_IsSpecializedBy() {
 		return (EReference) specializableElementEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSpecializableElement_Name() {
+		return (EAttribute) specializableElementEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -311,11 +311,11 @@ public class OperationalCapabilityPackageImpl extends EPackageImpl implements Op
 		createEReference(capabiltyEClass, CAPABILTY__IS_EXTENDED_BY);
 		createEReference(capabiltyEClass, CAPABILTY__INCLUDES);
 		createEReference(capabiltyEClass, CAPABILTY__IS_INCLUDED_IN);
-		createEAttribute(capabiltyEClass, CAPABILTY__NAME);
 
 		specializableElementEClass = createEClass(SPECIALIZABLE_ELEMENT);
 		createEReference(specializableElementEClass, SPECIALIZABLE_ELEMENT__SPECIALIZES);
 		createEReference(specializableElementEClass, SPECIALIZABLE_ELEMENT__IS_SPECIALIZED_BY);
+		createEAttribute(specializableElementEClass, SPECIALIZABLE_ELEMENT__NAME);
 
 		capabilityDiagramEClass = createEClass(CAPABILITY_DIAGRAM);
 		createEReference(capabilityDiagramEClass, CAPABILITY_DIAGRAM__ELEMENTS);
@@ -380,8 +380,6 @@ public class OperationalCapabilityPackageImpl extends EPackageImpl implements Op
 		initEReference(getCapabilty_IsIncludedIn(), this.getCapabilty(), this.getCapabilty_Includes(), "isIncludedIn",
 				null, 0, 1, Capabilty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
 				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCapabilty_Name(), ecorePackage.getEString(), "name", null, 0, 1, Capabilty.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(specializableElementEClass, SpecializableElement.class, "SpecializableElement", IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -392,6 +390,9 @@ public class OperationalCapabilityPackageImpl extends EPackageImpl implements Op
 		initEReference(getSpecializableElement_IsSpecializedBy(), this.getSpecializableElement(),
 				this.getSpecializableElement_Specializes(), "isSpecializedBy", null, 0, 1, SpecializableElement.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSpecializableElement_Name(), ecorePackage.getEString(), "name", null, 0, 1,
+				SpecializableElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(capabilityDiagramEClass, CapabilityDiagram.class, "CapabilityDiagram", !IS_ABSTRACT, !IS_INTERFACE,

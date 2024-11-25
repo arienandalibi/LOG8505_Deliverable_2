@@ -10,9 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-
-import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ViewerNotification;
 import org.eclipse.sample.operationalCapability.Capabilty;
 import org.eclipse.sample.operationalCapability.OperationalCapabilityPackage;
 
@@ -49,7 +46,6 @@ public class CapabiltyItemProvider extends SpecializableElementItemProvider {
 			addIsExtendedByPropertyDescriptor(object);
 			addIncludesPropertyDescriptor(object);
 			addIsIncludedInPropertyDescriptor(object);
-			addNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -134,22 +130,6 @@ public class CapabiltyItemProvider extends SpecializableElementItemProvider {
 	}
 
 	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Capabilty_name_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Capabilty_name_feature",
-								"_UI_Capabilty_type"),
-						OperationalCapabilityPackage.Literals.CAPABILTY__NAME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
-	}
-
-	/**
 	 * This returns Capabilty.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -193,12 +173,6 @@ public class CapabiltyItemProvider extends SpecializableElementItemProvider {
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
-
-		switch (notification.getFeatureID(Capabilty.class)) {
-		case OperationalCapabilityPackage.CAPABILTY__NAME:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-			return;
-		}
 		super.notifyChanged(notification);
 	}
 

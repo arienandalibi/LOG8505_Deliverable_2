@@ -9,6 +9,7 @@ import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+import org.eclipse.sample.operationalCapability.Entity;
 
 /**
  * This is the item provider adapter for a {@link org.eclipse.sample.operationalCapability.Entity} object.
@@ -71,7 +72,9 @@ public class EntityItemProvider extends InvolvableElementItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_Entity_type");
+		String label = ((Entity) object).getName();
+		return label == null || label.length() == 0 ? getString("_UI_Entity_type")
+				: getString("_UI_Entity_type") + " " + label;
 	}
 
 	/**

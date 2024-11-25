@@ -34,7 +34,6 @@ import org.eclipse.sample.operationalCapability.OperationalCapabilityPackage;
  *   <li>{@link org.eclipse.sample.operationalCapability.impl.CapabiltyImpl#getIsExtendedBy <em>Is Extended By</em>}</li>
  *   <li>{@link org.eclipse.sample.operationalCapability.impl.CapabiltyImpl#getIncludes <em>Includes</em>}</li>
  *   <li>{@link org.eclipse.sample.operationalCapability.impl.CapabiltyImpl#getIsIncludedIn <em>Is Included In</em>}</li>
- *   <li>{@link org.eclipse.sample.operationalCapability.impl.CapabiltyImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -89,26 +88,6 @@ public class CapabiltyImpl extends SpecializableElementImpl implements Capabilty
 	 * @ordered
 	 */
 	protected Capabilty isIncludedIn;
-
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -312,28 +291,6 @@ public class CapabiltyImpl extends SpecializableElementImpl implements Capabilty
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OperationalCapabilityPackage.CAPABILTY__NAME, oldName,
-					name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -402,8 +359,6 @@ public class CapabiltyImpl extends SpecializableElementImpl implements Capabilty
 			if (resolve)
 				return getIsIncludedIn();
 			return basicGetIsIncludedIn();
-		case OperationalCapabilityPackage.CAPABILTY__NAME:
-			return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -435,9 +390,6 @@ public class CapabiltyImpl extends SpecializableElementImpl implements Capabilty
 		case OperationalCapabilityPackage.CAPABILTY__IS_INCLUDED_IN:
 			setIsIncludedIn((Capabilty) newValue);
 			return;
-		case OperationalCapabilityPackage.CAPABILTY__NAME:
-			setName((String) newValue);
-			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -465,9 +417,6 @@ public class CapabiltyImpl extends SpecializableElementImpl implements Capabilty
 		case OperationalCapabilityPackage.CAPABILTY__IS_INCLUDED_IN:
 			setIsIncludedIn((Capabilty) null);
 			return;
-		case OperationalCapabilityPackage.CAPABILTY__NAME:
-			setName(NAME_EDEFAULT);
-			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -490,27 +439,8 @@ public class CapabiltyImpl extends SpecializableElementImpl implements Capabilty
 			return includes != null && !includes.isEmpty();
 		case OperationalCapabilityPackage.CAPABILTY__IS_INCLUDED_IN:
 			return isIncludedIn != null;
-		case OperationalCapabilityPackage.CAPABILTY__NAME:
-			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy())
-			return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(')');
-		return result.toString();
 	}
 
 } //CapabiltyImpl

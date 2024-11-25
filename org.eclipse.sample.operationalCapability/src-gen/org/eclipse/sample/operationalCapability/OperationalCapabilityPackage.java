@@ -86,13 +86,22 @@ public interface OperationalCapabilityPackage extends EPackage {
 	int SPECIALIZABLE_ELEMENT__IS_SPECIALIZED_BY = 1;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPECIALIZABLE_ELEMENT__NAME = 2;
+
+	/**
 	 * The number of structural features of the '<em>Specializable Element</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPECIALIZABLE_ELEMENT_FEATURE_COUNT = 2;
+	int SPECIALIZABLE_ELEMENT_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Specializable Element</em>' class.
@@ -130,6 +139,15 @@ public interface OperationalCapabilityPackage extends EPackage {
 	 * @ordered
 	 */
 	int CAPABILTY__IS_SPECIALIZED_BY = SPECIALIZABLE_ELEMENT__IS_SPECIALIZED_BY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAPABILTY__NAME = SPECIALIZABLE_ELEMENT__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Involves</b></em>' reference list.
@@ -177,22 +195,13 @@ public interface OperationalCapabilityPackage extends EPackage {
 	int CAPABILTY__IS_INCLUDED_IN = SPECIALIZABLE_ELEMENT_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAPABILTY__NAME = SPECIALIZABLE_ELEMENT_FEATURE_COUNT + 5;
-
-	/**
 	 * The number of structural features of the '<em>Capabilty</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CAPABILTY_FEATURE_COUNT = SPECIALIZABLE_ELEMENT_FEATURE_COUNT + 6;
+	int CAPABILTY_FEATURE_COUNT = SPECIALIZABLE_ELEMENT_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Capabilty</em>' class.
@@ -269,6 +278,15 @@ public interface OperationalCapabilityPackage extends EPackage {
 	int INVOLVABLE_ELEMENT__IS_SPECIALIZED_BY = SPECIALIZABLE_ELEMENT__IS_SPECIALIZED_BY;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOLVABLE_ELEMENT__NAME = SPECIALIZABLE_ELEMENT__NAME;
+
+	/**
 	 * The feature id for the '<em><b>Is Involved In</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -324,6 +342,15 @@ public interface OperationalCapabilityPackage extends EPackage {
 	int ACTOR__IS_SPECIALIZED_BY = INVOLVABLE_ELEMENT__IS_SPECIALIZED_BY;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTOR__NAME = INVOLVABLE_ELEMENT__NAME;
+
+	/**
 	 * The feature id for the '<em><b>Is Involved In</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -377,6 +404,15 @@ public interface OperationalCapabilityPackage extends EPackage {
 	 * @ordered
 	 */
 	int ENTITY__IS_SPECIALIZED_BY = INVOLVABLE_ELEMENT__IS_SPECIALIZED_BY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENTITY__NAME = INVOLVABLE_ELEMENT__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Is Involved In</b></em>' reference list.
@@ -471,17 +507,6 @@ public interface OperationalCapabilityPackage extends EPackage {
 	EReference getCapabilty_IsIncludedIn();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.sample.operationalCapability.Capabilty#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see org.eclipse.sample.operationalCapability.Capabilty#getName()
-	 * @see #getCapabilty()
-	 * @generated
-	 */
-	EAttribute getCapabilty_Name();
-
-	/**
 	 * Returns the meta object for class '{@link org.eclipse.sample.operationalCapability.SpecializableElement <em>Specializable Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -512,6 +537,17 @@ public interface OperationalCapabilityPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getSpecializableElement_IsSpecializedBy();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.sample.operationalCapability.SpecializableElement#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see org.eclipse.sample.operationalCapability.SpecializableElement#getName()
+	 * @see #getSpecializableElement()
+	 * @generated
+	 */
+	EAttribute getSpecializableElement_Name();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.sample.operationalCapability.CapabilityDiagram <em>Capability Diagram</em>}'.
@@ -649,14 +685,6 @@ public interface OperationalCapabilityPackage extends EPackage {
 		EReference CAPABILTY__IS_INCLUDED_IN = eINSTANCE.getCapabilty_IsIncludedIn();
 
 		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CAPABILTY__NAME = eINSTANCE.getCapabilty_Name();
-
-		/**
 		 * The meta object literal for the '{@link org.eclipse.sample.operationalCapability.impl.SpecializableElementImpl <em>Specializable Element</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -681,6 +709,14 @@ public interface OperationalCapabilityPackage extends EPackage {
 		 * @generated
 		 */
 		EReference SPECIALIZABLE_ELEMENT__IS_SPECIALIZED_BY = eINSTANCE.getSpecializableElement_IsSpecializedBy();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SPECIALIZABLE_ELEMENT__NAME = eINSTANCE.getSpecializableElement_Name();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.sample.operationalCapability.impl.CapabilityDiagramImpl <em>Capability Diagram</em>}' class.

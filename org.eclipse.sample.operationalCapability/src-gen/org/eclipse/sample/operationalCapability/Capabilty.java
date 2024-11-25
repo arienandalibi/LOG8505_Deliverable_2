@@ -18,7 +18,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link org.eclipse.sample.operationalCapability.Capabilty#getIsExtendedBy <em>Is Extended By</em>}</li>
  *   <li>{@link org.eclipse.sample.operationalCapability.Capabilty#getIncludes <em>Includes</em>}</li>
  *   <li>{@link org.eclipse.sample.operationalCapability.Capabilty#getIsIncludedIn <em>Is Included In</em>}</li>
- *   <li>{@link org.eclipse.sample.operationalCapability.Capabilty#getName <em>Name</em>}</li>
  * </ul>
  *
  * @see org.eclipse.sample.operationalCapability.OperationalCapabilityPackage#getCapabilty()
@@ -115,27 +114,5 @@ public interface Capabilty extends SpecializableElement {
 	 * @generated
 	 */
 	void setIsIncludedIn(Capabilty value);
-
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see org.eclipse.sample.operationalCapability.OperationalCapabilityPackage#getCapabilty_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link org.eclipse.sample.operationalCapability.Capabilty#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
 
 } // Capabilty

@@ -13,13 +13,13 @@
         eType="#//Capabilty" eOpposite="#//Capabilty/isIncludedIn"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="isIncludedIn" eType="#//Capabilty"
         eOpposite="#//Capabilty/includes"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SpecializableElement" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="specializes" eType="#//SpecializableElement"
         eOpposite="#//SpecializableElement/isSpecializedBy"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="isSpecializedBy" eType="#//SpecializableElement"
         eOpposite="#//SpecializableElement/specializes"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CapabilityDiagram">
     <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"

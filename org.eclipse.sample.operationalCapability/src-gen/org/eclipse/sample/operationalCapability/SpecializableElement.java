@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link org.eclipse.sample.operationalCapability.SpecializableElement#getSpecializes <em>Specializes</em>}</li>
  *   <li>{@link org.eclipse.sample.operationalCapability.SpecializableElement#getIsSpecializedBy <em>Is Specialized By</em>}</li>
+ *   <li>{@link org.eclipse.sample.operationalCapability.SpecializableElement#getName <em>Name</em>}</li>
  * </ul>
  *
  * @see org.eclipse.sample.operationalCapability.OperationalCapabilityPackage#getSpecializableElement()
@@ -69,5 +70,27 @@ public interface SpecializableElement extends EObject {
 	 * @generated
 	 */
 	void setIsSpecializedBy(SpecializableElement value);
+
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see org.eclipse.sample.operationalCapability.OperationalCapabilityPackage#getSpecializableElement_Name()
+	 * @model
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link org.eclipse.sample.operationalCapability.SpecializableElement#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
 
 } // SpecializableElement
