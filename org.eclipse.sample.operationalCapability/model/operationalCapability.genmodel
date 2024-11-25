@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/org.eclipse.sample.operationalCapability/src-gen"
+    creationIcons="false" editDirectory="/org.eclipse.sample.operationalCapability.edit/src-gen"
+    editorDirectory="/org.eclipse.sample.operationalCapability.editor/src-gen" modelPluginID="org.eclipse.sample.operationalCapability"
+    modelName="OperationalCapability" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>operationalCapability.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="OperationalCapability" basePackage="org.eclipse.sample" disposableProviderFactory="true"
+      ecorePackage="operationalCapability.ecore#/">
+    <genClasses ecoreClass="operationalCapability.ecore#//Capabilty">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference operationalCapability.ecore#//Capabilty/involves"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference operationalCapability.ecore#//Capabilty/extends"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference operationalCapability.ecore#//Capabilty/isExtendedBy"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference operationalCapability.ecore#//Capabilty/includes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference operationalCapability.ecore#//Capabilty/isIncludedIn"/>
+    </genClasses>
+    <genClasses ecoreClass="operationalCapability.ecore#//SpecializableElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference operationalCapability.ecore#//SpecializableElement/specializes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference operationalCapability.ecore#//SpecializableElement/isSpecializedBy"/>
+    </genClasses>
+    <genClasses ecoreClass="operationalCapability.ecore#//CapabilityDiagram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference operationalCapability.ecore#//CapabilityDiagram/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="operationalCapability.ecore#//InvolvableElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference operationalCapability.ecore#//InvolvableElement/isInvolvedIn"/>
+    </genClasses>
+    <genClasses ecoreClass="operationalCapability.ecore#//Actor"/>
+    <genClasses ecoreClass="operationalCapability.ecore#//Entity"/>
+  </genPackages>
+</genmodel:GenModel>

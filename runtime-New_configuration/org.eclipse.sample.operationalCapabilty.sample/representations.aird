@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:operationalCapability="http://www.example.org/operationalCapability" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description">
+  <viewpoint:DAnalysis uid="_0Sj5gKpKEe-tlbSL-kTrnA" selectedViews="_utH5wKr0Ee-bx7u-bONnVw" version="15.4.1.202403191723">
+    <semanticResources>Main.operationalcapability</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_utH5wKr0Ee-bx7u-bONnVw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_vtkDEKr0Ee-bx7u-bONnVw" name="new Capability Diagram" repPath="#_vtOE0Kr0Ee-bx7u-bONnVw" changeId="1732515362359">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']"/>
+        <target xmi:type="operationalCapability:CapabilityDiagram" href="Myain.operationalcapability#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_MvVwMar1Ee-bx7u-bONnVw" name="Main Capability Diagram" repPath="#_MvVJIKr1Ee-bx7u-bONnVw" changeId="1732515557048">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']"/>
+        <target xmi:type="operationalCapability:CapabilityDiagram" href="Main.operationalcapability#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_vtOE0Kr0Ee-bx7u-bONnVw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_vuR0wKr0Ee-bx7u-bONnVw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_vuR0war0Ee-bx7u-bONnVw" type="Sirius" element="_vtOE0Kr0Ee-bx7u-bONnVw" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_vuR0wqr0Ee-bx7u-bONnVw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_vuZJgKr0Ee-bx7u-bONnVw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_vuZwkKr0Ee-bx7u-bONnVw"/>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_vtZrAKr0Ee-bx7u-bONnVw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer"/>
+    <target xmi:type="operationalCapability:CapabilityDiagram" href="Myain.operationalcapability#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_MvVJIKr1Ee-bx7u-bONnVw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_MvW-UKr1Ee-bx7u-bONnVw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_MvW-Uar1Ee-bx7u-bONnVw" type="Sirius" element="_MvVJIKr1Ee-bx7u-bONnVw" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_MvW-Uqr1Ee-bx7u-bONnVw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_MvXlYKr1Ee-bx7u-bONnVw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_MvXlYar1Ee-bx7u-bONnVw"/>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_MvVwMKr1Ee-bx7u-bONnVw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer"/>
+    <target xmi:type="operationalCapability:CapabilityDiagram" href="Main.operationalcapability#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operationalCapability:CapabilityDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:operationalCapability="http://www.example.org/operationalCapability">
+  <elements xsi:type="operationalCapability:Capabilty"/>
+</operationalCapability:CapabilityDiagram>
