@@ -2,6 +2,7 @@
  */
 package org.eclipse.sample.operationalCapability;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -176,13 +177,22 @@ public interface OperationalCapabilityPackage extends EPackage {
 	int CAPABILTY__IS_INCLUDED_IN = SPECIALIZABLE_ELEMENT_FEATURE_COUNT + 4;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAPABILTY__NAME = SPECIALIZABLE_ELEMENT_FEATURE_COUNT + 5;
+
+	/**
 	 * The number of structural features of the '<em>Capabilty</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CAPABILTY_FEATURE_COUNT = SPECIALIZABLE_ELEMENT_FEATURE_COUNT + 5;
+	int CAPABILTY_FEATURE_COUNT = SPECIALIZABLE_ELEMENT_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of operations of the '<em>Capabilty</em>' class.
@@ -461,6 +471,17 @@ public interface OperationalCapabilityPackage extends EPackage {
 	EReference getCapabilty_IsIncludedIn();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.sample.operationalCapability.Capabilty#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see org.eclipse.sample.operationalCapability.Capabilty#getName()
+	 * @see #getCapabilty()
+	 * @generated
+	 */
+	EAttribute getCapabilty_Name();
+
+	/**
 	 * Returns the meta object for class '{@link org.eclipse.sample.operationalCapability.SpecializableElement <em>Specializable Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -626,6 +647,14 @@ public interface OperationalCapabilityPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CAPABILTY__IS_INCLUDED_IN = eINSTANCE.getCapabilty_IsIncludedIn();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CAPABILTY__NAME = eINSTANCE.getCapabilty_Name();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.sample.operationalCapability.impl.SpecializableElementImpl <em>Specializable Element</em>}' class.

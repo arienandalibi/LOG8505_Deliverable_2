@@ -2,6 +2,7 @@
  */
 package org.eclipse.sample.operationalCapability.impl;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -190,6 +191,15 @@ public class OperationalCapabilityPackageImpl extends EPackageImpl implements Op
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getCapabilty_Name() {
+		return (EAttribute) capabiltyEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getSpecializableElement() {
 		return specializableElementEClass;
 	}
@@ -301,6 +311,7 @@ public class OperationalCapabilityPackageImpl extends EPackageImpl implements Op
 		createEReference(capabiltyEClass, CAPABILTY__IS_EXTENDED_BY);
 		createEReference(capabiltyEClass, CAPABILTY__INCLUDES);
 		createEReference(capabiltyEClass, CAPABILTY__IS_INCLUDED_IN);
+		createEAttribute(capabiltyEClass, CAPABILTY__NAME);
 
 		specializableElementEClass = createEClass(SPECIALIZABLE_ELEMENT);
 		createEReference(specializableElementEClass, SPECIALIZABLE_ELEMENT__SPECIALIZES);
@@ -369,6 +380,8 @@ public class OperationalCapabilityPackageImpl extends EPackageImpl implements Op
 		initEReference(getCapabilty_IsIncludedIn(), this.getCapabilty(), this.getCapabilty_Includes(), "isIncludedIn",
 				null, 0, 1, Capabilty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
 				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCapabilty_Name(), ecorePackage.getEString(), "name", null, 0, 1, Capabilty.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(specializableElementEClass, SpecializableElement.class, "SpecializableElement", IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

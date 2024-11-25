@@ -17,6 +17,7 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference operationalCapability.ecore#//Capabilty/isExtendedBy"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference operationalCapability.ecore#//Capabilty/includes"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference operationalCapability.ecore#//Capabilty/isIncludedIn"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute operationalCapability.ecore#//Capabilty/name"/>
     </genClasses>
     <genClasses ecoreClass="operationalCapability.ecore#//SpecializableElement">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference operationalCapability.ecore#//SpecializableElement/specializes"/>
