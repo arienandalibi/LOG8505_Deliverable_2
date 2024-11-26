@@ -8,7 +8,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']"/>
         <target xmi:type="operationalCapability:CapabilityDiagram" href="Myain.operationalcapability#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_YQM9UauPEe-Y6c0MqtFCeA" name="Main Capability Diagram" repPath="#_YQMWQKuPEe-Y6c0MqtFCeA" changeId="1732582162695">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_YQM9UauPEe-Y6c0MqtFCeA" name="Main Capability Diagram" repPath="#_YQMWQKuPEe-Y6c0MqtFCeA" changeId="1732584792877">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']"/>
         <target xmi:type="operationalCapability:CapabilityDiagram" href="Main.operationalcapability#/"/>
       </ownedRepresentationDescriptors>
@@ -62,7 +62,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PbJLsquQEe-Y6c0MqtFCeA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_PbIkoauQEe-Y6c0MqtFCeA" fontName="Segoe UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PbIkoquQEe-Y6c0MqtFCeA" x="648" y="264"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PbIkoquQEe-Y6c0MqtFCeA" x="610" y="253"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_YQM9VauPEe-Y6c0MqtFCeA"/>
       </data>
@@ -78,7 +78,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Capability']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_iPl-oquPEe-Y6c0MqtFCeA" width="0" height="0" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_iPl-oquPEe-Y6c0MqtFCeA" name="actor1" width="0" height="0" resizeKind="NSEW">
       <target xmi:type="operationalCapability:Actor" href="Main.operationalcapability#//@elements.1"/>
       <semanticElements xmi:type="operationalCapability:Actor" href="Main.operationalcapability#//@elements.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_iPl-o6uPEe-Y6c0MqtFCeA" labelSize="12" labelPosition="node" width="-1" height="-1" color="204,242,166">
@@ -86,7 +86,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Actor']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_PbH9lKuQEe-Y6c0MqtFCeA" width="0" height="0" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_PbH9lKuQEe-Y6c0MqtFCeA" name="test" width="0" height="0" resizeKind="NSEW">
       <target xmi:type="operationalCapability:Entity" href="Main.operationalcapability#//@elements.2"/>
       <semanticElements xmi:type="operationalCapability:Entity" href="Main.operationalcapability#//@elements.2"/>
       <ownedStyle xmi:type="diagram:Square" uid="_PbH9lauQEe-Y6c0MqtFCeA" labelSize="12" labelPosition="node" width="-1" height="-1" color="138,226,52">
