@@ -1,4 +1,5 @@
 ### Extra features implemented
+- Default name automatically generated with increasing counter per element type
 - Capability, actor, and entity resizes with text size
 - Logo and text in circle/square
 - Relation labels to indicate what type of relation it is
@@ -6,3 +7,5 @@
 - Warning message when trying to create a relation that isn't possible
 - Extends can only be done on one element (as specified in metamodel)
 - Double click to change name on Capabilities, Actors, and Entities
+- Delete feature (with delete button) for all relations
+    - Took hours
