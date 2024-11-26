@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <operationalCapability:CapabilityDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:operationalCapability="http://www.example.org/operationalCapability">
-  <elements xsi:type="operationalCapability:Capabilty" href="#//@elements.0"/>
-  <elements xsi:type="operationalCapability:Actor" name="actor1"/>
-  <elements xsi:type="operationalCapability:Entity" name="test"/>
+  <elements xsi:type="operationalCapability:Capabilty" name="OperationalCapability 1" extends="//@elements.1"/>
+  <elements xsi:type="operationalCapability:Capabilty" name="OperationalCapability 2" isExtendedBy="//@elements.0"/>
+  <elements xsi:type="operationalCapability:Actor" name="Actor 1"/>
+  <elements xsi:type="operationalCapability:Capabilty" name="OperationalCapability 1"/>
 </operationalCapability:CapabilityDiagram>
