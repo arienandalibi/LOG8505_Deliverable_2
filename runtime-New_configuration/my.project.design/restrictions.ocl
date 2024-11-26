@@ -1,0 +1,21 @@
+import 'platform:/plugin/org.eclipse.sample.operationalCapability/model/operationalCapability.ecore'
+
+package operationalCapability
+	
+context Capabilty
+inv onlySpecializesCapability: self.specializes->forAll(c | c.oclIsKindOf(Capabilty))
+inv isSpecializedByCapability: self.isSpecializedBy->forAll(c | c.oclIsKindOf(Capabilty))
+inv IrreflexiveIncludes: not self._includes->includes(self)
+inv AsymmetricIncludes: self._includes->forAll(c | not c.isIncludedIn->includes(self))
+inv IrreflexiveExtends: not self._extends->includes(self)
+inv AsymmetricExtends: self._extends->forAll(c | not c.isExtendedBy->includes(self))
+
+context Actor
+inv onlySpecializesActor: self.specializes->forAll(c | c.oclIsKindOf(Actor))
+inv isSpecializedByActor: self.isSpecializedBy->forAll(c | c.oclIsKindOf(Actor))
+
+context Entity
+inv onlySpecializesEntity: self.specializes->forAll(c | c.oclIsKindOf(Entity))
+inv isSpecializedByEntity: self.isSpecializedBy->forAll(c | c.oclIsKindOf(Entity))
+
+endpackage

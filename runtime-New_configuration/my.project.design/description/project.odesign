@@ -12,7 +12,7 @@
           </style>
         </nodeMappings>
         <nodeMappings name="CD_Actor" semanticCandidatesExpression="feature:elements" doubleClickDescription="//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Rename']" domainClass="operationalCapability::Actor">
-          <style xsi:type="style:SquareDescription" labelSize="12" sizeComputationExpression="0" labelPosition="node" resizeKind="NSEW" width="-1" height="-1">
+          <style xsi:type="style:SquareDescription" labelSize="12" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="-1" height="-1">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
