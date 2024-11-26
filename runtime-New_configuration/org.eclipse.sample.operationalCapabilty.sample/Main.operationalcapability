@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <operationalCapability:CapabilityDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:operationalCapability="http://www.example.org/operationalCapability">
-  <elements xsi:type="operationalCapability:Capabilty" name="OperationalCapability 3" involves="//@elements.3" includes="//@elements.1 //@elements.2"/>
-  <elements xsi:type="operationalCapability:Capabilty" name="test" isIncludedIn="//@elements.0"/>
-  <elements xsi:type="operationalCapability:Capabilty" name="OperationalCapability 1" isIncludedIn="//@elements.0"/>
-  <elements xsi:type="operationalCapability:Actor" name="Actor 3" isInvolvedIn="//@elements.0"/>
-  <elements xsi:type="operationalCapability:Actor" name="Actor 4"/>
+  <elements xsi:type="operationalCapability:Capabilty" name="OperationalCapability 2" includes="//@elements.2" isIncludedIn="//@elements.2"/>
+  <elements xsi:type="operationalCapability:Actor" name="Actor 1"/>
+  <elements xsi:type="operationalCapability:Capabilty" name="OperationalCapability 3" includes="//@elements.0" isIncludedIn="//@elements.0"/>
+  <elements xsi:type="operationalCapability:Capabilty" name="OperationalCapability 4" extends="//@elements.4" isExtendedBy="//@elements.4"/>
+  <elements xsi:type="operationalCapability:Capabilty" name="OperationalCapability 5" extends="//@elements.3" isExtendedBy="//@elements.3"/>
 </operationalCapability:CapabilityDiagram>

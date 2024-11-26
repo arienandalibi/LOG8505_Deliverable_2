@@ -9,3 +9,5 @@
 - Double click to change name on Capabilities, Actors, and Entities
 - Delete feature (with delete button) for all relations
     - Took hours
+- OCL errors directly in diagram when constraints are broken
+    - OCL errors all offer quick fix possibility added manually
