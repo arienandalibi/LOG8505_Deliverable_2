@@ -98,9 +98,9 @@
           </style>
         </nodeMappings>
         <edgeMappings name="CD_Involvement" deletionDescription="//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Delete%20Involvement%20Relation']" sourceMapping="//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Capability']" targetMapping="//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Actor'] //@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Entity']" targetFinderExpression="aql: self.involves" targetExpression="aql: self">
-          <style sizeComputationExpression="2" routingStyle="manhattan">
+          <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="involves">
+            <centerLabelStyleDescription labelSize="12" showIcon="false">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
           </style>
