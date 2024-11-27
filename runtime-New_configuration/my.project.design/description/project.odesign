@@ -4,11 +4,21 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Capability Diagram" domainClass="operationalCapability::CapabilityDiagram" enablePopupBars="true">
       <metamodel href="http://www.example.org/operationalCapability#/"/>
       <validationSet name="All OCL Validations">
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="CapabilitySpecializes" level="ERROR" message="aql: self.name+' can only specialize elements of the same type (Capability)'" targetClass="operationalCapability::Capabilty">
+          <audits auditExpression="aql: self.specializes->notEmpty() implies self.specializes.oclIsTypeOf(operationalCapability::Capabilty)"/>
+          <fixes name="Remove specializes relation">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool:Unset" featureName="specializes" elementExpression="aql:self.specializes"/>
+              </firstModelOperations>
+            </initialOperation>
+          </fixes>
+        </ownedRules>
         <ownedRules xsi:type="validation:SemanticValidationRule" name="IrreflexiveIncludes" level="ERROR" message="aql: self.name+' should not include itself.'" targetClass="operationalCapability::Capabilty">
           <audits auditExpression="aql: not self.includes->includes(self)"/>
           <fixes name="Remove includes relation">
             <initialOperation>
-              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var: self">
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
                 <subModelOperations xsi:type="tool:Unset" featureName="includes" elementExpression="aql: self"/>
               </firstModelOperations>
             </initialOperation>
@@ -18,7 +28,7 @@
           <audits auditExpression="aql: self.includes->forAll(x | not x.includes->includes(self))"/>
           <fixes name="Remove includes relation">
             <initialOperation>
-              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var: self">
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
                 <subModelOperations xsi:type="tool:Unset" featureName="includes" elementExpression="aql:self.includes->select(x | x.includes->includes(self))"/>
               </firstModelOperations>
             </initialOperation>
@@ -28,7 +38,7 @@
           <audits auditExpression="aql: not self.extends->includes(self)"/>
           <fixes name="Remove extends relation">
             <initialOperation>
-              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var: self">
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
                 <subModelOperations xsi:type="tool:Unset" featureName="extends" elementExpression="aql: self"/>
               </firstModelOperations>
             </initialOperation>
@@ -38,8 +48,28 @@
           <audits auditExpression="aql: self.extends->forAll(x | not x.extends->includes(self))"/>
           <fixes name="Remove includes relation">
             <initialOperation>
-              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var: self">
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
                 <subModelOperations xsi:type="tool:Unset" featureName="extends" elementExpression="aql:self.extends->select(x | x.extends->includes(self))"/>
+              </firstModelOperations>
+            </initialOperation>
+          </fixes>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="ActorSpecializes" level="ERROR" message="aql: self.name+' can only specialize elements of the same type ('+self.eClass().name+')'" targetClass="operationalCapability::Actor">
+          <audits auditExpression="aql: self.specializes->notEmpty() implies self.specializes.oclIsTypeOf(operationalCapability::Actor)"/>
+          <fixes name="Remove specializes relation">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool:Unset" featureName="specializes" elementExpression="aql:self.specializes"/>
+              </firstModelOperations>
+            </initialOperation>
+          </fixes>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="EntitySpecializes" level="ERROR" message="aql: self.name+' can only specialize elements of the same type ('+self.eClass().name+')'" targetClass="operationalCapability::Entity">
+          <audits auditExpression="aql: self.specializes->notEmpty() implies self.specializes.oclIsTypeOf(operationalCapability::Entity)"/>
+          <fixes name="Remove specializes relation">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool:Unset" featureName="specializes" elementExpression="aql:self.specializes"/>
               </firstModelOperations>
             </initialOperation>
           </fixes>
@@ -257,7 +287,9 @@
               <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
                 <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Properties">
                   <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
-                    <initialOperation/>
+                    <initialOperation>
+                      <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self"/>
+                    </initialOperation>
                   </buttons>
                   <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
                     <initialOperation>

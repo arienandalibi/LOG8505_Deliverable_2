@@ -8,7 +8,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']"/>
         <target xmi:type="operationalCapability:CapabilityDiagram" href="Myain.operationalcapability#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_YQM9UauPEe-Y6c0MqtFCeA" name="Main Capability Diagram" repPath="#_YQMWQKuPEe-Y6c0MqtFCeA" changeId="1732683520029">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_YQM9UauPEe-Y6c0MqtFCeA" name="Main Capability Diagram" repPath="#_YQMWQKuPEe-Y6c0MqtFCeA" changeId="1732686077444">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']"/>
         <target xmi:type="operationalCapability:CapabilityDiagram" href="Main.operationalcapability#/"/>
       </ownedRepresentationDescriptors>
@@ -51,7 +51,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_icPd0qwvEe-0VqsUYekong"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_icO2xKwvEe-0VqsUYekong" fontName="Segoe UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_icO2xawvEe-0VqsUYekong" x="1056" y="408"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_icO2xawvEe-0VqsUYekong" x="528" y="168"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_ipGOFKwvEe-0VqsUYekong" type="2001" element="_ipE_8KwvEe-0VqsUYekong">
           <children xmi:type="notation:Node" xmi:id="_ipG1IKwvEe-0VqsUYekong" type="5002">
