@@ -8,7 +8,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']"/>
         <target xmi:type="operationalCapability:CapabilityDiagram" href="Myain.operationalcapability#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_YQM9UauPEe-Y6c0MqtFCeA" name="Main Capability Diagram" repPath="#_YQMWQKuPEe-Y6c0MqtFCeA" changeId="1732651358425">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_YQM9UauPEe-Y6c0MqtFCeA" name="Main Capability Diagram" repPath="#_YQMWQKuPEe-Y6c0MqtFCeA" changeId="1732683520029">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']"/>
         <target xmi:type="operationalCapability:CapabilityDiagram" href="Main.operationalcapability#/"/>
       </ownedRepresentationDescriptors>
@@ -40,7 +40,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cYRQkqwsEe-0VqsUYekong"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_cYQpg6wsEe-0VqsUYekong" fontName="Segoe UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cYQphKwsEe-0VqsUYekong" x="132" y="72" width="280" height="50"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cYQphKwsEe-0VqsUYekong" x="72" y="72" width="280" height="50"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_icO2w6wvEe-0VqsUYekong" type="2001" element="_icNooKwvEe-0VqsUYekong">
           <children xmi:type="notation:Node" xmi:id="_icO2xqwvEe-0VqsUYekong" type="5002">
@@ -62,7 +62,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ipG1JKwvEe-0VqsUYekong"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_ipGOFawvEe-0VqsUYekong" fontName="Segoe UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ipGOFqwvEe-0VqsUYekong" x="264" y="360" width="280" height="50"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ipGOFqwvEe-0VqsUYekong" x="168" y="396" width="280" height="50"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_IQ78oKwxEe-0VqsUYekong" type="2001" element="_IQ6HcKwxEe-0VqsUYekong">
           <children xmi:type="notation:Node" xmi:id="_IQ78o6wxEe-0VqsUYekong" type="5002">
@@ -95,29 +95,13 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4V_YXKwvEe-0VqsUYekong" x="12" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_4V_YXawvEe-0VqsUYekong" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4V_YXqwvEe-0VqsUYekong" x="-12" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4V_YXqwvEe-0VqsUYekong" x="-48" y="10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_4V_YVqwvEe-0VqsUYekong" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_4V_YV6wvEe-0VqsUYekong" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_4V_YWKwvEe-0VqsUYekong" points="[0, 25, -43, -253]$[0, 167, -43, -111]$[52, 167, 9, -111]$[52, 263, 9, -15]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_4V_YWKwvEe-0VqsUYekong" points="[0, 25, -7, -289]$[0, 167, -7, -147]$[16, 167, 9, -147]$[16, 299, 9, -15]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4V_YX6wvEe-0VqsUYekong" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4V_YYKwvEe-0VqsUYekong" id="(0.18214285714285713,0.3)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="__2bD6KwvEe-0VqsUYekong" type="4001" element="__2ZOtKwvEe-0VqsUYekong" source="_ipGOFKwvEe-0VqsUYekong" target="_cYQpgqwsEe-0VqsUYekong">
-          <children xmi:type="notation:Node" xmi:id="__2bD7KwvEe-0VqsUYekong" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__2bD7awvEe-0VqsUYekong" y="-10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="__2bD7qwvEe-0VqsUYekong" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__2bD76wvEe-0VqsUYekong" y="10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="__2bD8KwvEe-0VqsUYekong" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__2bD8awvEe-0VqsUYekong" y="10"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="__2bD6awvEe-0VqsUYekong" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="__2bD6qwvEe-0VqsUYekong" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__2bD66wvEe-0VqsUYekong" points="[0, 0, 60, 238]$[0, -119, 60, 119]$[-60, -119, 0, 119]$[-60, -238, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__2bq8KwvEe-0VqsUYekong" id="(0.5142857142857142,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__2bq8awvEe-0VqsUYekong" id="(0.7714285714285715,1.0)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_YaYFYKwxEe-0VqsUYekong" type="4001" element="_YaWQMKwxEe-0VqsUYekong" source="_IQ78oKwxEe-0VqsUYekong" target="_YB9lYKwxEe-0VqsUYekong">
           <children xmi:type="notation:Node" xmi:id="_YaYFZKwxEe-0VqsUYekong" type="6001">
@@ -156,7 +140,7 @@
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_YQNkY6uPEe-Y6c0MqtFCeA" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_YQNkZKuPEe-Y6c0MqtFCeA"/>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cYPbYKwsEe-0VqsUYekong" name="OperationalCapability 2" outgoingEdges="_4V-KMKwvEe-0VqsUYekong" incomingEdges="__2ZOtKwvEe-0VqsUYekong" width="28" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cYPbYKwsEe-0VqsUYekong" name="OperationalCapability 2" outgoingEdges="_4V-KMKwvEe-0VqsUYekong" width="28" height="5" resizeKind="NSEW">
       <target xmi:type="operationalCapability:Capabilty" href="Main.operationalcapability#//@elements.0"/>
       <semanticElements xmi:type="operationalCapability:Capabilty" href="Main.operationalcapability#//@elements.0"/>
       <ownedStyle xmi:type="diagram:Ellipse" uid="_cYPbYawsEe-0VqsUYekong" labelSize="12" labelPosition="node" horizontalDiameter="28" verticalDiameter="5" color="238,201,142">
@@ -164,7 +148,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Capability']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_ipE_8KwvEe-0VqsUYekong" name="OperationalCapability 3" outgoingEdges="__2ZOtKwvEe-0VqsUYekong" incomingEdges="_4V-KMKwvEe-0VqsUYekong" width="28" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_ipE_8KwvEe-0VqsUYekong" name="OperationalCapability 3" incomingEdges="_4V-KMKwvEe-0VqsUYekong" width="28" height="5" resizeKind="NSEW">
       <target xmi:type="operationalCapability:Capabilty" href="Main.operationalcapability#//@elements.2"/>
       <semanticElements xmi:type="operationalCapability:Capabilty" href="Main.operationalcapability#//@elements.2"/>
       <ownedStyle xmi:type="diagram:Ellipse" uid="_ipE_8awvEe-0VqsUYekong" labelSize="12" labelPosition="node" horizontalDiameter="28" verticalDiameter="5" color="238,201,142">
@@ -198,23 +182,15 @@
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_4V-KMKwvEe-0VqsUYekong" name="includes" sourceNode="_cYPbYKwsEe-0VqsUYekong" targetNode="_ipE_8KwvEe-0VqsUYekong">
       <target xmi:type="operationalCapability:Capabilty" href="Main.operationalcapability#//@elements.0"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_4V-KMawvEe-0VqsUYekong" lineStyle="dash" size="2" routingStyle="manhattan">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_4V-KMawvEe-0VqsUYekong" lineStyle="dash" size="2" routingStyle="manhattan" strokeColor="39,76,114">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@edgeMappings[name='CD_Includes']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_4V-KMqwvEe-0VqsUYekong" labelSize="12" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@edgeMappings[name='CD_Includes']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="__2ZOtKwvEe-0VqsUYekong" name="includes" sourceNode="_ipE_8KwvEe-0VqsUYekong" targetNode="_cYPbYKwsEe-0VqsUYekong">
-      <target xmi:type="operationalCapability:Capabilty" href="Main.operationalcapability#//@elements.2"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="__2Z1wKwvEe-0VqsUYekong" lineStyle="dash" size="2" routingStyle="manhattan">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@edgeMappings[name='CD_Includes']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__2Z1wawvEe-0VqsUYekong" labelSize="12" showIcon="false"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@edgeMappings[name='CD_Includes']"/>
-    </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_YaWQMKwxEe-0VqsUYekong" name="extends" sourceNode="_IQ6HcKwxEe-0VqsUYekong" targetNode="_YB7JIKwxEe-0VqsUYekong">
       <target xmi:type="operationalCapability:Capabilty" href="Main.operationalcapability#//@elements.3"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_YaWQMawxEe-0VqsUYekong" lineStyle="dash" size="2" routingStyle="manhattan">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_YaWQMawxEe-0VqsUYekong" lineStyle="dash" size="2" routingStyle="manhattan" strokeColor="252,175,62">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@edgeMappings[name='CD_Extends']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_YaWQMqwxEe-0VqsUYekong" labelSize="12" showIcon="false"/>
       </ownedStyle>
@@ -222,7 +198,7 @@
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_YuO1hKwxEe-0VqsUYekong" name="extends" sourceNode="_YB7JIKwxEe-0VqsUYekong" targetNode="_IQ6HcKwxEe-0VqsUYekong">
       <target xmi:type="operationalCapability:Capabilty" href="Main.operationalcapability#//@elements.4"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_YuO1hawxEe-0VqsUYekong" lineStyle="dash" size="2" routingStyle="manhattan">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_YuO1hawxEe-0VqsUYekong" lineStyle="dash" size="2" routingStyle="manhattan" strokeColor="252,175,62">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@edgeMappings[name='CD_Extends']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_YuO1hqwxEe-0VqsUYekong" labelSize="12" showIcon="false"/>
       </ownedStyle>

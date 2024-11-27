@@ -77,7 +77,7 @@
         </edgeMappings>
         <edgeMappings name="CD_Extends" deletionDescription="//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Delete%20Extends%20Relation']" sourceMapping="//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Capability']" targetMapping="//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Capability']" targetFinderExpression="aql: self.extends">
           <style lineStyle="dash" sizeComputationExpression="2" routingStyle="manhattan">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
             <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="extends">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
@@ -85,8 +85,16 @@
         </edgeMappings>
         <edgeMappings name="CD_Includes" deletionDescription="//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Delete%20Includes%20Relation']" sourceMapping="//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Capability']" targetMapping="//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Capability']" targetFinderExpression="aql: self.includes">
           <style lineStyle="dash" sizeComputationExpression="2" routingStyle="manhattan">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
             <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="includes">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="CD_Specializes" deletionDescription="//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Delete%20Specializes%20Relation']" sourceMapping="//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Capability'] //@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Actor'] //@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Entity']" targetMapping="//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Capability'] //@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Actor'] //@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Entity']" targetFinderExpression="aql: self.specializes">
+          <style lineStyle="dash" sizeComputationExpression="2" routingStyle="manhattan">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="specializes">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
           </style>
@@ -231,6 +239,17 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="Specializes" edgeMappings="//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@edgeMappings[name='CD_Specializes']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool:SetValue" featureName="specializes" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
           <ownedTools xsi:type="tool_1:DoubleClickDescription" name="Rename" mappings="//@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Actor'] //@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Capability'] //@ownedViewpoints[name='OperationalCapability']/@ownedRepresentations[name='Capability%20Diagram']/@defaultLayer/@nodeMappings[name='CD_Entity']">
             <element name="element"/>
             <elementView name="elementView"/>
@@ -289,6 +308,18 @@
               <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql: self">
                 <subModelOperations xsi:type="tool:ChangeContext" browseExpression="[elementView.sourceNode.oclAsType(DSemanticDecorator).source/]">
                   <subModelOperations xsi:type="tool:Unset" featureName="includes" elementExpression="[elementView.targetNode.oclAsType(DSemanticDecorator).target/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:DeleteElementDescription" name="Delete Specializes Relation">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql: self">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="[elementView.sourceNode.oclAsType(DSemanticDecorator).source/]">
+                  <subModelOperations xsi:type="tool:Unset" featureName="specializes" elementExpression="[elementView.targetNode.oclAsType(DSemanticDecorator).target/]"/>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
