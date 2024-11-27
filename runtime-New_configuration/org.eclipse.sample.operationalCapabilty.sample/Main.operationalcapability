@@ -6,7 +6,7 @@
   <elements xsi:type="operationalCapability:Capabilty" name="Charge USB Device" involves="//@elements.8" includes="//@elements.4"/>
   <elements xsi:type="operationalCapability:Capabilty" name="Generate Power" involves="//@elements.9" isIncludedIn="//@elements.3"/>
   <elements xsi:type="operationalCapability:Capabilty" name="Monitor Operation Remotely" involves="//@elements.7"/>
-  <elements xsi:type="operationalCapability:Actor" name="User" isInvolvedIn="//@elements.0 //@elements.1 //@elements.2"/>
+  <elements xsi:type="operationalCapability:Actor" name="User" isInvolvedIn="//@elements.1 //@elements.2 //@elements.0"/>
   <elements xsi:type="operationalCapability:Actor" name="Developer" isInvolvedIn="//@elements.5"/>
   <elements xsi:type="operationalCapability:Entity" name="USB Device" isInvolvedIn="//@elements.1 //@elements.2 //@elements.3"/>
   <elements xsi:type="operationalCapability:Entity" name="Sun" isInvolvedIn="//@elements.4"/>
