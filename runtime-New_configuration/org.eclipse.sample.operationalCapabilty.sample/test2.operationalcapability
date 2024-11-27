@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operationalCapability:CapabilityDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:operationalCapability="http://www.example.org/operationalCapability">
+  <elements xsi:type="operationalCapability:Capabilty" name="OperationalCapability 1" involves="//@elements.2 //@elements.3 //@elements.4" extends="//@elements.1" includes="//@elements.8"/>
+  <elements xsi:type="operationalCapability:Capabilty" name="OperationalCapability 2" involves="//@elements.3 //@elements.5 //@elements.6 //@elements.7" isExtendedBy="//@elements.0"/>
+  <elements xsi:type="operationalCapability:Actor" name="Actor 1" isInvolvedIn="//@elements.0"/>
+  <elements xsi:type="operationalCapability:Actor" name="Actor 2" isInvolvedIn="//@elements.0 //@elements.1"/>
+  <elements xsi:type="operationalCapability:Actor" name="Actor 3" isInvolvedIn="//@elements.0"/>
+  <elements xsi:type="operationalCapability:Actor" name="Actor 4" isInvolvedIn="//@elements.1"/>
+  <elements xsi:type="operationalCapability:Actor" name="Actor 5" isInvolvedIn="//@elements.1"/>
+  <elements xsi:type="operationalCapability:Entity" name="Entity 1" isInvolvedIn="//@elements.1"/>
+  <elements xsi:type="operationalCapability:Capabilty" name="OperationalCapability 3" involves="//@elements.9" isIncludedIn="//@elements.0"/>
+  <elements xsi:type="operationalCapability:Entity" name="Entity 2" isInvolvedIn="//@elements.8"/>
+</operationalCapability:CapabilityDiagram>
