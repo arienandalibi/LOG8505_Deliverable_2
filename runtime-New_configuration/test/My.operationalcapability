@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operationalCapability:CapabilityDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:operationalCapability="http://www.example.org/operationalCapability">
+  <elements xsi:type="operationalCapability:Capabilty" name="OperationalCapability 2" involves="//@elements.4 //@elements.5" isIncludedIn="//@elements.2"/>
+  <elements xsi:type="operationalCapability:Capabilty" name="OperationalCapability 3" involves="//@elements.3" extends="//@elements.2"/>
+  <elements xsi:type="operationalCapability:Capabilty" name="Custom Name Sample" involves="//@elements.5" isExtendedBy="//@elements.1" includes="//@elements.0"/>
+  <elements xsi:type="operationalCapability:Entity" name="Entity 1" isInvolvedIn="//@elements.1"/>
+  <elements xsi:type="operationalCapability:Actor" isSpecializedBy="//@elements.5" name="Actor 1" isInvolvedIn="//@elements.0"/>
+  <elements xsi:type="operationalCapability:Actor" specializes="//@elements.4" name="Actor 2" isInvolvedIn="//@elements.0 //@elements.2"/>
+</operationalCapability:CapabilityDiagram>
